@@ -1,1 +1,1 @@
-# golf-mini-game
+# A Mini Golf Game
