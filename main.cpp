@@ -8,6 +8,6 @@ int main(int argc, char* agrv[]){
   /* Code Body */
 //     SDL_DestroyTexture(tex);
 //     SDL_DestroyRenderer(rend);
-    SDL_DestroyWindow(win);
+//     SDL_DestroyWindow(win);
     SDL_Quit();
 }
