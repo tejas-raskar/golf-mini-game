@@ -1,19 +1,37 @@
 #include <raylib.h>
 #include <raymath.h>
+#include <iostream>
+
+#include "ball.h"
+
+Ball ball;
 
 int main(void)
 {
-    InitWindow(400, 224, "Golf v1.0");
+    const int screenWidth = 640;
+    const int screenHeight = 480;
+    InitWindow(screenWidth, screenHeight, "Golf v1.0");
+    SetTargetFPS(60);
+
+    ball.radius = 10;
+    ball.position.x = screenWidth / 2;
+    ball.position.y = screenHeight / 2;
+
 
     while (!WindowShouldClose())
     {
         BeginDrawing();
-            ClearBackground(BLACK);
+
+        ball.update();
+
+        ClearBackground(BLACK);
+
+        ball.draw();
+
         EndDrawing();
     }
 
     CloseWindow();
 
     return 0;
-        
 }
