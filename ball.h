@@ -12,7 +12,7 @@ private:
 public:
     Vector2 velocity;
     Vector2 position;
-    int radius;
+    int radius = 10;
 
     void draw()
     {
