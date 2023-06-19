@@ -2,7 +2,7 @@
 #include <raymath.h>
 #include <iostream>
 
-#include "ball.cpp"
+#include "ball.h"
 
 Ball ball;
 
