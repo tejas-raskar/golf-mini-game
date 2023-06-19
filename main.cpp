@@ -13,20 +13,17 @@ int main(void)
     InitWindow(screenWidth, screenHeight, "Golf v1.0");
     SetTargetFPS(60);
 
-    ball.radius = 10;
-    ball.position.x = screenWidth / 2;
-    ball.position.y = screenHeight / 2;
+    ball.position.x = (float) screenWidth / 2;
+    ball.position.y = (float) screenHeight / 2;
 
 
     while (!WindowShouldClose())
     {
         BeginDrawing();
 
-        ball.update();
-
-        ClearBackground(BLACK);
-
-        ball.draw();
+             ball.update();
+             ClearBackground(BLACK);
+             ball.draw();
 
         EndDrawing();
     }
